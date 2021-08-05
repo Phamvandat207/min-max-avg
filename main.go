@@ -18,10 +18,14 @@ func findMinAndMax(arr []int) (min int, max int) {
 
 func findAvg (arr []int) int{
 	var sum, avg int
-	for i :=0; i < len(arr); i++ {
-		sum += arr[i]
+	//for i :=0; i < len(arr); i++ {
+	//	sum += arr[i]
+	//}
+	for _, num := range arr {
+		sum += num
 	}
 	avg = sum/(len(arr)-1)
+
 	return avg
 }
 
